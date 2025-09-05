@@ -2,7 +2,7 @@
   "name": "kosh-bangladesh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://riddoahamed.github.io/KOSH-BANGLADESH-MVP",
+
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
-    "build:vercel": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
+    "build:vercel": "GENERATE_SOURCEMAP=false NODE_OPTIONS='--openssl-legacy-provider' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "NODE_OPTIONS='--openssl-legacy-provider' npm run build",
