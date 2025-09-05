@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/KOSH-BANGLADESH-MVP/static/css/main.767ce3fd.chunk.css",
+    "main.js": "/KOSH-BANGLADESH-MVP/static/js/main.c4410ff4.chunk.js",
+    "main.js.map": "/KOSH-BANGLADESH-MVP/static/js/main.c4410ff4.chunk.js.map",
+    "runtime-main.js": "/KOSH-BANGLADESH-MVP/static/js/runtime-main.8bcb860e.js",
+    "runtime-main.js.map": "/KOSH-BANGLADESH-MVP/static/js/runtime-main.8bcb860e.js.map",
+    "static/js/2.d7ea2017.chunk.js": "/KOSH-BANGLADESH-MVP/static/js/2.d7ea2017.chunk.js",
+    "static/js/2.d7ea2017.chunk.js.map": "/KOSH-BANGLADESH-MVP/static/js/2.d7ea2017.chunk.js.map",
+    "static/js/3.ab1e874e.chunk.js": "/KOSH-BANGLADESH-MVP/static/js/3.ab1e874e.chunk.js",
+    "static/js/3.ab1e874e.chunk.js.map": "/KOSH-BANGLADESH-MVP/static/js/3.ab1e874e.chunk.js.map",
+    "index.html": "/KOSH-BANGLADESH-MVP/index.html",
+    "static/css/main.767ce3fd.chunk.css.map": "/KOSH-BANGLADESH-MVP/static/css/main.767ce3fd.chunk.css.map",
+    "static/js/2.d7ea2017.chunk.js.LICENSE.txt": "/KOSH-BANGLADESH-MVP/static/js/2.d7ea2017.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bcb860e.js",
+    "static/js/2.d7ea2017.chunk.js",
+    "static/css/main.767ce3fd.chunk.css",
+    "static/js/main.c4410ff4.chunk.js"
+  ]
+}
