@@ -51,6 +51,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "netlify-cli": "^23.5.0",
+    "vercel": "^47.0.5"
   }
 }
