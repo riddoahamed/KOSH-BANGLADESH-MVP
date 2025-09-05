@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Production builds (Vercel will build it)
+build/
+
+# Local development files
+.eslintcache
+*.log
+
+# PM2 ecosystem files
+ecosystem*.js
+static-server.js
+showcase.py
+simple-server.js
+logs/
+
+# Deployment archives
+*.tar.gz
+*.zip
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

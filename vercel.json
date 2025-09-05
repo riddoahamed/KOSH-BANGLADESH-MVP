@@ -1,15 +1,8 @@
 {
   "version": 2,
   "name": "kosh-bangladesh-mvp",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "build",
   "routes": [
     {
       "src": "/static/(.*)",
@@ -20,5 +13,7 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "NODE_OPTIONS='--openssl-legacy-provider' npm run build"
+  "env": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"
+  }
 }
