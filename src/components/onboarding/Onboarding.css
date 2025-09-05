@@ -1,0 +1,312 @@
+.onboarding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.onboarding__container {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* Progress Indicator */
+.progress__indicator {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.progress__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.progress__dot--active {
+  transform: scale(1.2);
+}
+
+/* Step Header */
+.step__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.step__header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.step__header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Welcome Step */
+.welcome__content {
+  text-align: center;
+}
+
+.welcome__hero {
+  margin-bottom: 60px;
+}
+
+.hero__logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto 24px;
+}
+
+.welcome__hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.welcome__hero p {
+  font-size: 1.3rem;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.feature__card {
+  padding: 32px 24px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature__card:hover {
+  transform: translateY(-4px);
+}
+
+.feature__icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.feature__icon svg {
+  font-size: inherit;
+}
+
+.feature__card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.feature__card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Form Steps */
+.form__content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form__group {
+  margin-bottom: 24px;
+}
+
+.form__group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.checkbox__group {
+  margin-top: 32px;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.checkbox__label input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: #006A4E;
+}
+
+.checkbox__label a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.checkbox__label a:hover {
+  text-decoration: underline;
+}
+
+/* Complete Step */
+.complete__content {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.success__icon {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.complete__content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.complete__content > p {
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.next__steps {
+  text-align: left;
+  padding: 24px;
+  background-color: rgba(0, 106, 78, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 106, 78, 0.1);
+}
+
+.next__steps h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.next__steps ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.next__steps li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.next__steps li:last-child {
+  margin-bottom: 0;
+}
+
+/* Navigation */
+.step__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(139, 148, 158, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .onboarding__container {
+    padding: 20px;
+  }
+
+  .step__header h2 {
+    font-size: 2rem;
+  }
+
+  .step__header p {
+    font-size: 1rem;
+  }
+
+  .welcome__hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome__hero p {
+    font-size: 1.1rem;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature__card {
+    padding: 24px 20px;
+  }
+
+  .feature__icon {
+    font-size: 40px;
+  }
+
+  .hero__logo {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .complete__content h2 {
+    font-size: 1.8rem;
+  }
+
+  .success__icon {
+    font-size: 60px;
+  }
+
+  .step__navigation {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .step__navigation .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .onboarding__container {
+    padding: 16px;
+  }
+
+  .step__header {
+    margin-bottom: 32px;
+  }
+
+  .welcome__hero {
+    margin-bottom: 40px;
+  }
+
+  .form__group {
+    margin-bottom: 20px;
+  }
+
+  .step__navigation {
+    margin-top: 32px;
+    padding-top: 20px;
+  }
+}

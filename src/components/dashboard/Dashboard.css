@@ -1,0 +1,350 @@
+.dashboard {
+  padding: 32px 24px;
+}
+
+.dashboard__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.dashboard__header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dashboard__header p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Portfolio Overview */
+.portfolio__overview {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.portfolio__card {
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.main__card {
+  background: linear-gradient(135deg, rgba(0, 106, 78, 0.05) 0%, rgba(0, 184, 148, 0.05) 100%);
+}
+
+.portfolio__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.portfolio__header h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.portfolio__header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.portfolio__metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.metric span:first-child {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.metric__value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.metric__value svg {
+  font-size: 1.2rem;
+}
+
+/* Quick Stats */
+.quick__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat__card {
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.stat__card:hover {
+  transform: translateY(-2px);
+}
+
+.stat__card h4 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat__value {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat__value span:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stat__value span:last-child {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Dashboard Content */
+.dashboard__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section__header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section__header a {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.section__header a:hover {
+  text-decoration: underline;
+}
+
+/* Holdings */
+.holdings__list,
+.watchlist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.holding__item,
+.watchlist__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.holding__item:hover,
+.watchlist__item:hover {
+  transform: translateX(4px);
+}
+
+.holding__info,
+.stock__info {
+  flex: 1;
+}
+
+.holding__info h4,
+.stock__info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.holding__info p,
+.stock__info p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.holding__value,
+.stock__price {
+  text-align: right;
+}
+
+.holding__value span:first-child,
+.stock__price span:first-child {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.holding__value span:last-child,
+.stock__price span:last-child {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.positive {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.negative {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .portfolio__overview {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard__content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portfolio__metrics {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px 16px;
+  }
+
+  .dashboard__header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .dashboard__header h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio__card {
+    padding: 24px 20px;
+  }
+
+  .portfolio__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .portfolio__header h2 {
+    font-size: 2.2rem;
+  }
+
+  .quick__stats {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .stat__card {
+    min-width: 160px;
+    padding: 16px;
+  }
+
+  .stat__value span:first-child {
+    font-size: 1.2rem;
+  }
+
+  .holding__item,
+  .watchlist__item {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 16px 12px;
+  }
+
+  .dashboard__header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard__header p {
+    font-size: 1rem;
+  }
+
+  .portfolio__overview {
+    margin-bottom: 32px;
+  }
+
+  .portfolio__card {
+    padding: 20px 16px;
+  }
+
+  .portfolio__header h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio__metrics {
+    gap: 12px;
+  }
+
+  .metric__value {
+    font-size: 1rem;
+  }
+
+  .section__header {
+    margin-bottom: 16px;
+  }
+
+  .section__header h3 {
+    font-size: 1.2rem;
+  }
+}

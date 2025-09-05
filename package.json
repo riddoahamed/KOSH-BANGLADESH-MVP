@@ -1,5 +1,5 @@
 {
-  "name": "robinhood",
+  "name": "kosh-bangladesh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,10 @@
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "4.0.1",
+    "styled-components": "^5.3.11",
+    "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
